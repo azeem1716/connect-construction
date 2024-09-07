@@ -155,6 +155,8 @@
 
 /* Header  */
 
+
+
 .header {
   width: 90%;
   display: flex;
@@ -218,7 +220,6 @@
 }
 
 
-
 .mobile-header {
   display: none;
   background-color: var(--theme-color);
@@ -248,16 +249,17 @@
 .mobile-menu {
   background-color: var(--theme-color);
   position: fixed;
-  top: -100%;
+  right: -100%;
+  top: 0;
   width: 100%;
   height: 100%;
-  transition: top 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out;
   z-index: 9;
   padding: 20px;
 }
 
 .mobile-menu.active {
-  top: 0;
+  right: 0;
 }
 
 .close-button {
@@ -285,6 +287,7 @@
   text-decoration: none;
   font-weight: bold;
 }
+
 
 
 /* Header  */
@@ -349,6 +352,11 @@
   height: 130px;
   width: 148px;
   border-radius: 10px;
+}
+.icon-box:hover{
+  background-color: var(--theme-color);
+  transition: 0.5s ease;
+  scale: 1.05;
 }
 
 .icon-box img {
@@ -528,6 +536,14 @@ footer {
   padding: 80px 0px;
 }
 
+.social-icon{
+  border: 1px solid var(--gray);
+  border-radius: 100px;
+}
+.social-icon i{
+  font-size: 12px;
+}
+
 .address-list {
   list-style-type: none;
   padding: 0;
@@ -563,7 +579,7 @@ footer {
   align-items: center;
   border: 1px solid #ccc;
   /* Border color */
-  padding: 5px 10px;
+  padding: 5px 5px;
   background-color: #2b2b2b;
   /* Background color */
 }
@@ -573,7 +589,7 @@ footer {
   background: none;
   color: #ccc;
   /* Text color */
-  padding: 10px;
+  padding: 5px;
   width: 100%;
   outline: none;
 }
@@ -595,6 +611,8 @@ footer {
 
 .newsletter-form input::placeholder {
   color: #777;
+  font-size: 12px;
+  font-family: "ClashDisplay-regular";
   /* Placeholder color */
 }
 
@@ -606,6 +624,12 @@ footer {
 .newsletter-form button:hover {
   color: #ffd700;
   /* Hover arrow color */
+}
+
+.divider{
+  height: 12px;
+  width: 2px;
+  background-color: var(--purple);
 }
 
 /* All categories  */
@@ -632,6 +656,7 @@ footer {
 .category-card img {
   height: 250px;
 }
+
 
 /* All categories  */
 
@@ -690,7 +715,7 @@ top:300px;
   }
 }
 
-/* .table-listing {
+.table-listing {
   background-color: #f5f5f5;
 }
 .table tbody td, .table thead th {
@@ -704,4 +729,4 @@ top:300px;
 .crossmark {
   color: red;
   font-size: 1.5rem;
-} */
+}
