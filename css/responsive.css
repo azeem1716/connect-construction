@@ -39,6 +39,12 @@
 }
 
 
+@media(max-width:768px){
+  .contactuspage-card{
+    /* display: none; */
+  }
+}
+
 /* 
 <!-- Slider Section Start -->
 <div class="mt-5">
