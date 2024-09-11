@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css.map" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    /> -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link
       rel="stylesheet"
@@ -22,8 +24,8 @@
   </head>
 
   <body>
-    <!-- Header  -->
-    <div class="header">
+    <!-- Header -->
+    <header class="header">
       <div class="header-logo">
         <div>
           <img src="assets/images/Connect-Construction-logo.png" alt="" />
@@ -36,22 +38,21 @@
         >
           <div class="ms-3">
             <span class="text-white text-medium text-xs">
-              <i class="fa-solid fa-phone text-theme me-2"></i>
-              604-592-0822</span
-            >
+              <i class="fa-solid fa-phone text-theme me-2"></i> 604-592-0822
+            </span>
           </div>
           <div class="d-flex gap-3">
             <div>
               <span class="text-white text-medium text-xs">
                 <i class="fa-solid fa-location-dot text-theme me-2"></i> 8028
-                128 St Unit#120, Surrey, BC, V3W 4E9</span
-              >
+                128 St Unit#120, Surrey, BC, V3W 4E9
+              </span>
             </div>
             <div>
-              <span class="text-white text-white text-medium text-xs"
-                ><i class="fa-solid fa-envelope text-theme me-2"></i
-                >Info@connectconstruction.com</span
-              >
+              <span class="text-white text-medium text-xs">
+                <i class="fa-solid fa-envelope text-theme me-2"></i>
+                Info@connectconstruction.com
+              </span>
             </div>
           </div>
         </div>
@@ -64,27 +65,33 @@
               class="list-unstyled d-flex justify-content-center align-items-center gap-3 mt-3 ms-3 text-medium text-xs"
             >
               <li><a href="index.html">Home</a></li>
-              <li><a href="">About US</a></li>
-              <li><a href="contactUs.html">Category</a></li>
-              <li><a href="">Coupons</a></li>
+              <li><a href="allCategories.html">Category</a></li>
+              <li><a href="coupons.html">Coupons</a></li>
+              <li><a href="blog.html">Blog</a></li>
               <li><a href="contactUs.html">Contact Us</a></li>
             </ul>
           </div>
 
           <div>
-            <button class="auth-btn">Login/Register</button>
-            <button class="common-btn">Advertise With us</button>
+            <button id="auth-btn" class="auth-btn text-sm text-regular">
+              Login | Register
+            </button>
+            <a href="advertise.html">
+              <button class="common-btn text-sm text-regular">
+                Advertise With us
+              </button>
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
     <header class="mobile-header">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="logo">
-          <a href="#"
-            ><img src="assets/images/Connect-Construction-logo.png" alt="Logo"
-          /></a>
+          <a href="#">
+            <img src="assets/images/Connect-Construction-logo.png" alt="Logo" />
+          </a>
         </div>
         <button class="toggle-button" id="toggleButton">☰</button>
       </div>
@@ -95,16 +102,15 @@
         >
           <li><a href="index.html">Home</a></li>
           <li><a href="">About Us</a></li>
-          <li><a href="">Category</a></li>
+          <li><a href="allCategories.html">Category</a></li>
           <li><a href="">Coupons</a></li>
           <li><a href="">Contact Us</a></li>
-          <li><a href="">Login/Register</a></li>
-          <li><a href="">Advertise With us</a></li>
+          <li><a id="auth-btn" href="">Login | Register</a></li>
+          <li><a href="advertise.html">Advertise With us</a></li>
         </ul>
       </nav>
     </header>
-
-    <!-- Header  -->
+    <!-- Header -->
 
     <!-- Hero-Section -->
     <section
@@ -133,16 +139,9 @@
                   height="24"
                 >
                   <path
-                    d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 001.48-5.34C15.27 6.09 13.27 4 10.75 4S6.23 6.09 6.09 8.39c-.26 1.76.26 3.42 1.39 4.57l.27.28v.79l4.99 5.01c.19.2.45.32.71.32s.52-.12.71-.32l4.99-5.01v-.79l-.27-.28A6.471 6.471 0 0015.5 14zm-4.75 0C9.01 14 7 11.99 7 9.75S9.01 5.5 10.75 5.5 14.5 7.51 14.5 9.75 12.49 14 10.75 14z"
+                    d="M11 2a9 9 0 016.32 15.32l4.13 4.13a1 1 0 01-1.41 1.41l-4.13-4.13A9 9 0 1111 2zm0 2a7 7 0 100 14 7 7 0 000-14z"
                   />
                 </svg>
-                <!-- <svg 
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24">
-                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
-              </svg> -->
               </button>
             </div>
 
@@ -230,6 +229,122 @@
     </section>
     <!-- End of Hero-Section -->
 
+    <!-- Slider Section Start -->
+    <div class="mt-5">
+      <div class="carousel-heading">
+        <div class="container">
+          <h2
+            class="text-medium text-primary text-lg text-center text-lg-start"
+          >
+            Featured Container
+          </h2>
+        </div>
+      </div>
+
+      <div class="carousel-container">
+        <!-- Carousel Start -->
+        <div
+          class="carousel-wrapper d-flex justify-content-between align-items-baseline"
+        >
+          <!-- Navigation Buttons Container -->
+          <div class="nav-buttons-container">
+            <div class="custom-owl-prev">
+              <i class="fas fa-arrow-left text-primary"></i>
+              <!-- Simple left arrow -->
+            </div>
+            <div class="custom-owl-next">
+              <i class="fas fa-arrow-right"></i>
+              <!-- Simple right arrow -->
+            </div>
+          </div>
+
+          <!-- Slider main container -->
+          <div
+            class="owl-carousel owl-theme overflow-hidden"
+            id="featured-slider"
+          >
+            <!-- Slides -->
+            <div class="item">
+              <a href="businessDetails.html" class="text-decoration-none">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="assets/images/Slider-1.png" alt="Slide Image" />
+                  </div>
+                  <div class="slide-text">
+                    <span class="text-sm text-primary text-medium">
+                      An Elegant Touch <br> Home Staging & Design
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="businessDetails.html" class="text-decoration-none">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="assets/images/Slider-1.png" alt="Slide Image" />
+                  </div>
+                  <div class="slide-text ms-2">
+                    <span class="text-sm text-primary text-medium">
+                      An Elegant Touch <br> Home Staging & Design
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="businessDetails.html" class="text-decoration-none">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="assets/images/Slider-1.png" alt="Slide Image" />
+                  </div>
+                  <div class="slide-text ms-2">
+                    <span class="text-sm text-primary text-medium">
+                      An Elegant Touch <br> Home Staging & Design
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="businessDetails.html" class="text-decoration-none">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="assets/images/Slider-1.png" alt="Slide Image" />
+                  </div>
+                  <div class="slide-text ms-2">
+                    <span class="text-sm text-primary text-medium">
+                      An Elegant Touch <br> Home Staging & Design
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="businessDetails.html" class="text-decoration-none">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="assets/images/Slider-1.png" alt="Slide Image" />
+                  </div>
+                  <div class="slide-text ms-2">
+                    <span class="text-sm text-primary text-medium">
+                      An Elegant Touch <br> Home Staging & Design
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel End -->
+      </div>
+    </div>
+    <!-- Slider Section End -->
+
     <!-- Blog-Section  -->
     <section
       class="blog-section d-flex justify-content-center align-items-center"
@@ -240,103 +355,111 @@
           <span class="text-md text-medium">News</span>
           <h2 class="text-lg text-medium">Articles & Blog Posts</h2>
         </div>
+        <!-- Blog Carousel Starts  -->
+        <div class="owl-carousel owl-theme container" id="blog-carousel">
+          <div class="blog-card item">
+            <div>
+              <img src="assets/images/blog-image.png" alt="" />
+            </div>
+            <div class="blog-card-date">
+              <span class="text-xs text-medium text-primary">January 10, 2024</span>
+            </div>
 
-        <div class="  owl-carousel owl-theme">
+            <div class="blog-card-text">
+              <div>
+                <h2 class="mt-3 text-medium text-md">
+                  Complete Bill And Adele Jonas Center
+                </h2>
+              </div>
+            </div>
+          </div>
 
           <div class="blog-card item">
             <div>
               <img src="assets/images/blog-image.png" alt="" />
             </div>
             <div class="blog-card-date">
-              <span class="text-xs text-regular">January 10, 2024</span>
+              <span class="text-xs text-medium text-primary">January 10, 2024</span>
             </div>
 
             <div class="blog-card-text">
               <div>
-                <h2 class="mt-3 text-medium text-sm">Complete Bill And Adele Jonas Center</h2>
+                <h2 class="mt-3 text-medium text-md">
+                  Complete Bill And Adele Jonas Center
+                </h2>
               </div>
             </div>
           </div>
 
-          <div class="blog-card  item">
+          <div class="blog-card item">
             <div>
               <img src="assets/images/blog-image.png" alt="" />
             </div>
             <div class="blog-card-date">
-              <span class="text-xs text-regular">January 10, 2024</span>
+              <span class="text-xs text-medium text-primary">January 10, 2024</span>
             </div>
 
             <div class="blog-card-text">
               <div>
-                <h2 class="mt-3 text-medium text-sm">Complete Bill And Adele Jonas Center</h2>
+                <h2 class="mt-3 text-medium text-md">
+                  Complete Bill And Adele Jonas Center
+                </h2>
               </div>
             </div>
           </div>
 
-          <div class="blog-card  item">
+          <div class="blog-card item">
             <div>
               <img src="assets/images/blog-image.png" alt="" />
             </div>
             <div class="blog-card-date">
-              <span class="text-xs text-regular">January 10, 2024</span>
+              <span class="text-xs text-medium text-primary">January 10, 2024</span>
             </div>
 
             <div class="blog-card-text">
               <div>
-                <h2 class="mt-3 text-medium text-sm">Complete Bill And Adele Jonas Center</h2>
+                <h2 class="mt-3 text-medium text-md">
+                  Complete Bill And Adele Jonas Center
+                </h2>
               </div>
             </div>
           </div>
 
-          <div class="blog-card  item">
+          <div class="blog-card item">
             <div>
               <img src="assets/images/blog-image.png" alt="" />
             </div>
             <div class="blog-card-date">
-              <span class="text-xs text-regular">January 10, 2024</span>
+              <span class="text-xs text-medium text-primary">January 10, 2024</span>
             </div>
 
             <div class="blog-card-text">
               <div>
-                <h2 class="mt-3 text-medium text-sm">Complete Bill And Adele Jonas Center</h2>
+                <h2 class="mt-3 text-medium text-md">
+                  Complete Bill And Adele Jonas Center
+                </h2>
               </div>
             </div>
           </div>
 
-
-          <div class="blog-card  item">
+          <div class="blog-card item">
             <div>
               <img src="assets/images/blog-image.png" alt="" />
             </div>
             <div class="blog-card-date">
-              <span class="text-xs text-regular">January 10, 2024</span>
+              <span class="text-xs text-medium text-primary">January 10, 2024</span>
             </div>
 
             <div class="blog-card-text">
               <div>
-                <h2 class="mt-3 text-medium text-sm">Complete Bill And Adele Jonas Center</h2>
+                <h2 class="mt-3 text-medium text-md">
+                  Complete Bill And Adele Jonas Center
+                </h2>
               </div>
             </div>
           </div>
-
-
-          <div class="blog-card  item">
-            <div>
-              <img src="assets/images/blog-image.png" alt="" />
-            </div>
-            <div class="blog-card-date">
-              <span class="text-xs text-regular">January 10, 2024</span>
-            </div>
-
-            <div class="blog-card-text">
-              <div>
-                <h2 class="mt-3 text-medium text-sm">Complete Bill And Adele Jonas Center</h2>
-              </div>
-            </div>
-          </div>
-          
-
         </div>
+        <!-- Blog Carousel Ends  -->
       </div>
     </section>
     <!-- Blog-Section  -->
@@ -357,7 +480,7 @@
         </div>
 
         <!-- Download Text and Buttons -->
-        <div class="col-12 col-lg-6 p-5 ">
+        <div class="col-12 col-lg-6 p-5">
           <div>
             <h2 class="download-text mb-2 text-medium text-md lh-1">
               Download Our New Mobile App
@@ -372,7 +495,9 @@
                   <img src="assets/icons/google.svg" alt="Google Play Icon" />
                   <div class="d-flex flex-column">
                     <span class="text-light text-xs">Download on the</span>
-                    <span class="text-medium text-sm text-lg-md  lh-1">Google Play</span>
+                    <span class="text-medium text-sm text-lg-md lh-1"
+                      >Google Play</span
+                    >
                   </div>
                 </div>
 
@@ -397,7 +522,9 @@
                   />
                   <div class="d-flex flex-column">
                     <span class="text-light text-xs">Download on the</span>
-                    <span class="text-medium text-sm text-lg-md  lh-1">Apple Play</span>
+                    <span class="text-medium text-sm text-lg-md lh-1"
+                      >Apple Play</span
+                    >
                   </div>
                 </div>
                 <div>
@@ -516,7 +643,9 @@
         </div>
         <div class="row mt-5">
           <div class="footer-divider mb-5"></div>
-          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 gap-lg-0">
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 gap-lg-0"
+          >
             <div class="d-flex justify-content-center gap-5">
               <span
                 class="d-flex justify-content-center align-items-center text-purple text-xs text-regular"
@@ -545,18 +674,78 @@
     </footer>
     <!-- End of Footer -->
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      $('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  // nav:true,
-  autoplay:true,
-  autoplaySpeed:2000
-})
-    </script>
+    <!-- back top of the page -->
+    <span id="back-top" class="text-center md-round fa fa-caret-up"></span>
+    <!-- back top of the page -->
+
+
+    <!-- loader of the page -->
+    <div id="loader" class="loader-holder">
+      <div class="block">
+        <img src="assets/icons/hearts.svg" width="100" alt="loader" />
+      </div>
+    </div>
+     <!-- loader of the page -->
+
+     <!-- Popup Form -->
+    <div class="popup-holder">
+      <div id="popup" class="signup-form">
+        <!-- Close button -->
+        <span class="close-btn">&times;</span>
+        <!-- This section will be replaced based on the form type -->
+        <form action="#" class="text-center" id="form-content">
+          <fieldset>
+            <h2 class="text-md text-medium text-primary">
+              Sign in to
+              <span class="bg-yellow p-1 rounded-3">
+                <img
+                  src="assets/images/Connect-Construction-logo.png"
+                  class="rounded-4"
+                  height="25px"
+                  alt=""
+                />
+              </span>
+            </h2>
+            <p class="text-sm text-medium text-primary">
+              Enter your details below.
+            </p>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email Address"
+              />
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Passowrd"
+              />
+            </div>
+            <button type="submit" class="common-btn text-xs text-regular text-white">
+              SIGN IN
+            </button>
+            <a href="#" id="switch-to-signup">Sign up</a>
+            <!-- Switch to sign-up -->
+          </fieldset>
+        </form>
+      </div>
+    </div>
+     <!-- Popup Form -->
+\
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <script src="js/app.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js.map"></script>
