@@ -92,7 +92,7 @@ $(document).ready(function() {
               <div class="form-group">
               <div class="input-container">
             <input type="text" placeholder="Name">
-            <i class="fa-solid fa-envelope user-icon"></i>
+             <i class="fa-regular fa-user user-icon"></i>
         </div>
 
         <div class="input-container mt-3">
@@ -103,9 +103,11 @@ $(document).ready(function() {
 
                  
               </div>
-               <button type="submit" class="auth-btn  text-xs text-regular text-gray py-3">
+               <div>
+               <button type="submit" class="auth-btn  text-xs text-regular text-gray py-3 w-100">
               SIGN IN
             </button>
+               </div>
               <a href="#" id="switch-to-signup" class="text-sm text-medium text-white" >Create New Account</a>
           </fieldset>
       `);
@@ -136,10 +138,12 @@ $(document).ready(function() {
           <i class="fa-solid fa-phone user-icon"></i>
       </div>
               </div>
-              <button type="submit" class="auth-btn  text-xs text-regular text-gray py-3">
+              <div class="w-100">
+              <button type="submit" class="auth-btn  text-xs text-regular text-gray py-3 w-100">
               SIGN UP
             </button>
-              <a href="#" id="switch-to-signin" class="text-sm text-medium text-white">Sign in</a>
+              </div>
+              <a href="#" id="switch-to-signin" class="text-sm text-medium text-white">Back To login</a>
           </fieldset>
       `);
   }

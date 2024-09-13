@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+<body>
+    
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+          <a href="index.html" class="text-decoration-none">
+            <div >
+              <img href="index.html" src="assets/images/Connect-Construction-logo.png" alt="" />
+            </div>
+          </a>
+         
+        </div>
+  
+        <div class="header-bars">
+          <div
+            class="header-icon-bar d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-3">
+              <a class="text-decoration-none" href="tel:+604-592-0822" target="_blank">
+                <span class="text-white text-medium text-xs ">
+                  <i class="fa-solid fa-phone text-theme me-2"></i> 604-592-0822
+                </span>
+  
+              </a>
+              
+            </div>
+            <div class="d-flex gap-3">
+              <div>
+               <a href="https://www.google.com/maps/place/8028+128+St+Unit+120,+Surrey,+BC+V3W+4E9,+Canada/@49.1484471,-122.8697239,17z/data=!3m1!4b1!4m6!3m5!1s0x5485d982b72fffff:0xac0fc18c1815ecd2!8m2!3d49.1484471!4d-122.867149!16s%2Fg%2F11q8srwqhs?entry=ttu&g_ep=EgoyMDI0MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-decoration-none">
+                <span class="text-white text-medium text-xs">
+                  <i class="fa-solid fa-location-dot text-theme me-2"></i> 8028
+                  128 St Unit#120, Surrey, BC, V3W 4E9
+                </span>
+               </a>
+              </div>
+              <div>
+               <a href="mailto:info@connectconstruction.com" class="text-decoration-none">
+                <span class="text-white text-medium text-xs">
+                  <i class="fa-solid fa-envelope text-theme me-2"></i>
+                  Info@connectconstruction.com
+                </span>
+               </a>
+              </div>
+            </div>
+          </div>
+  
+          <div
+            class="header-menu-bar d-flex justify-content-between align-items-center"
+          >
+            <div>
+              <ul
+                class="list-unstyled d-flex justify-content-center align-items-center gap-4 mt-3 ms-3 text-medium text-sm"
+              >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="allCategories.html">Category</a></li>
+                <li><a href="coupons.html">Coupons</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+              </ul>
+            </div>
+  
+            <div class="d-flex align-items-center gap-3">
+              <button id="auth-btn" class="auth-btn text-sm text-regular">
+                Login | Register
+              </button>
+              <a href="advertise.html">
+                <button class="common-btn text-sm text-regular">
+                  Advertise With us
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+  
+      <header class="mobile-header">
+        <div class="container d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/images/Connect-Construction-logo.png" alt="Logo" />
+            </a>
+          </div>
+          <button class="toggle-button" id="toggleButton">☰</button>
+        </div>
+        <nav class="mobile-menu" id="mobileMenu">
+          <button class="close-button" id="closeButton">&times;</button>
+          <ul
+            class="list-unstyled d-flex flex-column justify-content-center align-items-left gap-3 mt-5 text-medium"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allCategories.html">Category</a></li>
+            <li><a href="coupons.html">Coupons</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a id="auth-btn" href="login.html">Login | Register</a></li>
+            <li><a href="advertise.html">Advertise With us</a></li>
+          </ul>
+  
+         
+             
+            </div>
+        </nav>
+  
+
+       <div class="z-3">
+        <div class="mt-4">
+            <!-- Close button -->
+            <!-- <span class="close-btn">&times;</span> -->
+            <!-- This section will be replaced based on the form type -->
+            <form action="#" class="text-center " id="form-content">
+                <fieldset>
+                    <h2 class="text-md text-medium text-white">
+                        Sign in to 
+                        <span class="bg-yellow p-1 rounded-3">
+                            <img src="assets/images/Connect-Construction-logo.png" class="rounded-4" height="25px" alt="">
+                        </span>
+                    </h2>
+                    <p class="text-sm text-medium text-white">Enter your details below.</p>
+                    <div class="form-group">
+                    <div class="input-container">
+                  <input type="text" placeholder="Name">
+                  <i class="fa-solid fa-envelope user-icon"></i>
+              </div>
+      
+              <div class="input-container mt-3">
+                <input type="text" placeholder="Phone Number">
+                <i class="fa-solid fa-phone user-icon"></i>
+            </div>
+      
+      
+                       
+                    </div>
+                     <div class="mt-3">
+                     <button type="submit" class="auth-btn  text-xs text-regular text-gray py-3 w-100">
+                    SIGN IN
+                  </button>
+                     </div>
+                    <a href="signup.html" id="switch-to-signup" class="text-sm text-medium text-white" >Create New Account</a>
+                </fieldset>
+            </form>
+          </div>
+        
+       </div>
+  
+        </div>
+      </header>
+      <!-- Header -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer data-aos="fade-up" data-aos-duration="3000">
+        <div class="container">
+          <div class="row">
+            <!-- About Section -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <h2 class="text-semi-bold text-white">About</h2>
+              <p class="mt-lg-5 text-regular text-xs text-purple col-10">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+  
+              <div class="d-flex justify-content-start align-items-center gap-3">
+                <div
+                  class="social-icon d-flex justify-content-center align-items-center"
+                  style="padding: 10px 12px"
+                >
+                  <i class="fa-brands fa-facebook-f text-gray"></i>
+                </div>
+                <div
+                  class="social-icon d-flex justify-content-center align-items-center"
+                  style="padding: 10px 9px"
+                >
+                  <i class="fa-brands fa-google-plus-g text-gray"></i>
+                </div>
+                <div
+                  class="social-icon d-flex justify-content-center align-items-center"
+                  style="padding: 10px 10px"
+                >
+                  <i class="fa-brands fa-twitter text-gray"></i>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Contact Info Section -->
+            <div class="col-12 col-md-6 col-lg-3 mt-4 mt-md-0">
+              <h2 class="text-md text-semi-bold text-white mt-4 mt-md-0">Contact Info</h2>
+              <ul class="mt-lg-5 address-list">
+                <li class="mb-2 d-flex">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="address-content ml-3">
+                    <h4 class="text-regular text-white">ADDRESS</h4>
+                    <p class="text-regular text-xs text-purple col-10">
+                      This is a dummy text, Your address comes here...
+                    </p>
+                  </div>
+                </li>
+                <li class="mb-2 d-flex">
+                  <i class="fas fa-mobile-alt"></i>
+                  <div class="address-content ml-3">
+                    <h4 class="text-regular text-white">Call us 24/7</h4>
+                    <p class="text-regular text-xs text-purple">123 456 789</p>
+                  </div>
+                </li>
+                <li class="mb-2 d-flex">
+                  <i class="fas fa-envelope"></i>
+                  <div class="address-content ml-3">
+                    <h4 class="text-regular text-white">EMAIL</h4>
+                    <p class="text-regular text-xs text-purple">
+                      info@example.com
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+  
+            <!-- Quick Links Section -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <h2 class="text-md text-semi-bold text-white mt-4 mt-md-0">Quick Links</h2>
+              <ul class="mt-lg-5 list-unstyled">
+                <a href="index.html" class="text-decoration-none">
+                  <li class="mb-2 text-regular text-xs text-purple">Home</li>
+                </a>
+                <a href="allCategories.html" class="text-decoration-none">
+                  <li class="mb-2 text-regular text-xs text-purple">Category</li>
+                </a>
+                <a href="coupons.html" class="text-decoration-none">
+                  <li class="mb-2 text-regular text-xs text-purple">Coupons</li>
+                </a>
+                <a href="blog.html" class="text-decoration-none">
+                  <li class="mb-2 text-regular text-xs text-purple">Blog</li>
+                </a>
+                <a href="contactUs.html" class="text-decoration-none">
+                  <li class="mb-2 text-regular text-xs text-purple">
+                    Contact Us
+                  </li>
+                </a>
+              </ul>
+            </div>
+  
+            <!-- Newsletter Section -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <h2 class="text-md text-semi-bold text-white mt-4 mt-md-0">Newsletter</h2>
+              <div class="mt-lg-5">
+                <span class="text-regular text-xs text-white"
+                  >Subscribe for Newsletter</span
+                >
+                <p class="mt-2 text-regular text-xs text-purple col-10">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry.
+                </p>
+                <div class="newsletter-container">
+                  <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" required />
+                    <button type="submit">
+                      <i class="arrow-right"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="footer-divider mb-5"></div>
+            <div
+              class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 gap-lg-0"
+            >
+              <div
+                class="d-flex flex-column flex-md-row justify-content-center align-items-start align-items-md-center gap-3 gap-lg-5"
+              >
+                <a href="#" class="text-decoration-none">
+                  <span
+                  class="d-flex justify-content-center align-items-center text-purple text-xs text-regular"
+                  >Privacy Policy
+                  <div class="divider ms-2 ms-lg-5 d-none d-md-block"></div>
+                </span>
+                </a>
+               <a href="#" class="text-decoration-none">
+                <span
+                class="d-flex justify-content-center align-items-center text-purple text-xs text-regular"
+                >Cookies Acceptance/Policy
+                <div class="divider ms-2 ms-lg-5 d-none d-md-block"></div>
+              </span>
+               </a>
+                <a href="#" class="text-decoration-none">
+                  <span
+                  class="d-flex justify-content-center align-items-center text-purple text-xs text-regular"
+                  >Spam Policy
+                </span>
+                </a>
+              </div>
+  
+              <div>
+                <span class="text-purple text-xs text-regular"
+                  >@2024, All Right Reserved</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+      <!-- End of Footer -->
+  
+      <!-- back top of the page -->
+      <span id="back-top" class="text-center md-round fa fa-caret-up"></span>
+      <!-- back top of the page -->
+  
+      <!-- loader of the page -->
+      <div id="loader" class="loader-holder">
+        <div class="block">
+          <img src="assets/icons/hearts.svg" width="100" alt="loader" />
+        </div>
+      </div>
+      <!-- loader of the page -->
+  
+      <!-- Popup Form -->
+      <div class="popup-holder">
+        <div id="popup" class="signup-form">
+          <!-- Close button -->
+          <span class="close-btn">&times;</span>
+          <!-- This section will be replaced based on the form type -->
+          <form action="#" class="text-center " id="form-content">
+           
+          </form>
+        </div>
+      </div>
+      <!-- Popup Form -->
+  
+  
+  
+  
+  
+  
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+      <script>
+        AOS.init();
+      </script>
+  
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+  
+      <script src="js/app.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js.map"></script>
+</body>
+</html>
