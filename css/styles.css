@@ -413,14 +413,14 @@
 }
 
 .mobile-menu li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 
 .mobile-menu a {
   color: var(--primary-color);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 20px;
 }
 
@@ -931,6 +931,7 @@ footer {
   width: 430px;
   margin: 0 auto;
   background:var(--theme-color);
+  border-radius: 5px;
 }
 
 .signup-form .form-group {
@@ -1137,6 +1138,7 @@ background-position: center center;
   padding: 15px 40px 15px 10px; 
   font-size: 16px;
   border: none;
+  border-radius: 5px;
   outline: none;
   box-sizing: border-box;
   background-color:#ebe9e3;
@@ -1149,6 +1151,7 @@ background-position: center center;
   padding: 15px 80px 15px 10px; 
   font-size: 16px;
   border: none;
+  border-radius: 5px;
   outline: none;
   box-sizing: border-box;
   background-color:#ebe9e3;
@@ -1191,10 +1194,24 @@ background-position: center center;
 }
 
 
-.input-container input:focus {
-  border-color: #007bff;
+.input-container>input:focus {
+  
+  border:1px solid var(--purple);
 }
 
+
+.input-container>textarea:focus {
+  
+  border:1px solid var(--purple);
+
+}
+
+.input-container input:focus + .user-icon {
+  color:var(--theme-color) ;
+}
+.input-container>textarea:focus + .user-icon {
+  color: var(--theme-color); /* Color on focus */
+}
 .contact-form-btn{
   width: 100%;
 }

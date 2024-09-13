@@ -91,7 +91,7 @@ $(document).ready(function() {
               <p class="text-sm text-medium text-white">Enter your details below.</p>
               <div class="form-group">
               <div class="input-container">
-            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Name">
             <i class="fa-solid fa-envelope user-icon"></i>
         </div>
 
@@ -103,7 +103,7 @@ $(document).ready(function() {
 
                  
               </div>
-               <button type="submit" class="auth-btn  text-xs text-regular text-gray py-2">
+               <button type="submit" class="auth-btn  text-xs text-regular text-gray py-3">
               SIGN IN
             </button>
               <a href="#" id="switch-to-signup" class="text-sm text-medium text-white" >Create New Account</a>
@@ -129,17 +129,14 @@ $(document).ready(function() {
             <input type="text" placeholder="Name">
             <i class="fa-regular fa-user user-icon"></i>
         </div>
-                 <div class="input-container mt-3">
-            <input type="email" placeholder="Email">
-            <i class="fa-solid fa-envelope user-icon"></i>
-        </div>
+                 
 
         <div class="input-container mt-3">
           <input type="text" placeholder="Phone Number">
           <i class="fa-solid fa-phone user-icon"></i>
       </div>
               </div>
-              <button type="submit" class="auth-btn  text-xs text-regular text-gray py-2">
+              <button type="submit" class="auth-btn  text-xs text-regular text-gray py-3">
               SIGN UP
             </button>
               <a href="#" id="switch-to-signin" class="text-sm text-medium text-white">Sign in</a>
