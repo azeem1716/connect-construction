@@ -82,21 +82,31 @@ $(document).ready(function() {
   function loadSignInForm() {
       $('#form-content').html(`
           <fieldset>
-              <h2 class="text-md text-medium text-primary">
+              <h2 class="text-md text-medium text-white">
                   Sign in to 
                   <span class="bg-yellow p-1 rounded-3">
                       <img src="assets/images/Connect-Construction-logo.png" class="rounded-4" height="25px" alt="">
                   </span>
               </h2>
-              <p class="text-sm text-medium text-primary">Enter your details below.</p>
+              <p class="text-sm text-medium text-white">Enter your details below.</p>
               <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Email Address">
-                  <input type="password" class="form-control" placeholder="Password">
+              <div class="input-container">
+            <input type="email" placeholder="Email">
+            <i class="fa-solid fa-envelope user-icon"></i>
+        </div>
+
+        <div class="input-container mt-3">
+          <input type="text" placeholder="Phone Number">
+          <i class="fa-solid fa-phone user-icon"></i>
+      </div>
+
+
+                 
               </div>
-               <button type="submit" class="common-btn text-xs text-regular text-white">
+               <button type="submit" class="auth-btn  text-xs text-regular text-gray py-2">
               SIGN IN
             </button>
-              <a href="#" id="switch-to-signup" >Sign up</a>
+              <a href="#" id="switch-to-signup" class="text-sm text-medium text-white" >Create New Account</a>
           </fieldset>
       `);
   }
@@ -105,22 +115,34 @@ $(document).ready(function() {
   function loadSignUpForm() {
       $('#form-content').html(`
           <fieldset>
-              <h2 class="text-md text-medium text-primary">
+              <h2 class="text-md text-medium text-white">
                   Sign up for 
                   <span class="bg-yellow p-1 rounded-3">
                       <img src="assets/images/Connect-Construction-logo.png" class="rounded-4" height="25px" alt="">
                   </span>
               </h2>
-              <p class="text-sm text-medium text-primary">Enter your details to create an account.</p>
+              <p class="text-sm text-medium text-white">Enter your details to create an account.</p>
               <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Full Name">
-                  <input type="email" class="form-control" placeholder="Email Address">
-                  <input type="password" class="form-control" placeholder="Password">
+
+
+               <div class="input-container">
+            <input type="text" placeholder="Name">
+            <i class="fa-regular fa-user user-icon"></i>
+        </div>
+                 <div class="input-container mt-3">
+            <input type="email" placeholder="Email">
+            <i class="fa-solid fa-envelope user-icon"></i>
+        </div>
+
+        <div class="input-container mt-3">
+          <input type="text" placeholder="Phone Number">
+          <i class="fa-solid fa-phone user-icon"></i>
+      </div>
               </div>
-              <button type="submit" class="common-btn text-xs text-regular text-white">
+              <button type="submit" class="auth-btn  text-xs text-regular text-gray py-2">
               SIGN UP
             </button>
-              <a href="#" id="switch-to-signin">Sign in</a>
+              <a href="#" id="switch-to-signin" class="text-sm text-medium text-white">Sign in</a>
           </fieldset>
       `);
   }
@@ -131,12 +153,17 @@ $(window).on('load', function() {
   $("#blog-carousel").owlCarousel({
     loop: true,
     autoWidth: true,  
-    items:3,
+    // items:3,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplaySpeed: 2000,
     center: true,
     margin: 10,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 }
+    }
   });
 });
 
@@ -169,5 +196,96 @@ $(document).ready(function() {
     owl.trigger('next.owl.carousel', [800]); 
   });
 });
+
+
+
+$(document).ready(function () {
+  let items = [
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    { title: "Appliances", src: "assets/images/Catg-img.png" },
+    // Add more items as needed
+  ];
+
+  let itemsLoaded = 0; // Start from 0
+
+  $("#loadMore").on("click", function () {
+    let content = "";
+    for (
+      let i = itemsLoaded;
+      i < itemsLoaded + 4 && i < items.length;
+      i++
+    ) {
+      let src = items[i].src;
+      let title = items[i].title;
+
+      content += `
+           <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                  <div>
+                      <div>
+                          <img src="${src}" alt="" />
+                      </div>
+                      <div>
+                          <span class="text-medium text-md">${title}</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      `;
+    }
+
+    $("#content").append(content);
+    itemsLoaded += 4; // Increase by 4 each time
+
+    if (itemsLoaded >= items.length) {
+      $("#loadMore").hide(); // Hide the button if no more items to load
+    }
+  });
+});
+
+
+
+
+
+// /* From Uiverse.io by vinodjangid07 */ 
+// <form class="otp-Form">
+ 
+//  <span class="mainHeading">Enter OTP</span>
+//  <p class="otpSubheading">We have sent a verification code to your mobile number</p>
+//  <div class="inputContainer">
+//   <input required="required" maxlength="1" type="text" class="otp-input" id="otp-input1">
+//   <input required="required" maxlength="1" type="text" class="otp-input" id="otp-input2">
+//   <input required="required" maxlength="1" type="text" class="otp-input" id="otp-input3">
+//   <input required="required" maxlength="1" type="text" class="otp-input" id="otp-input4"> 
+  
+//  </div>
+//   <button class="verifyButton" type="submit">Verify</button>
+//     <button class="exitBtn">×</button>
+//     <p class="resendNote">Didn't receive the code? <button class="resendBtn">Resend Code</button></p>
+    
+// </form>
+
 
 

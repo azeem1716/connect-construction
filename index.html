@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Connect Construction</title>
     <link rel="stylesheet" href="css/bootstrap.min.css.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css.map" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link
       rel="stylesheet"
@@ -27,9 +28,12 @@
     <!-- Header -->
     <header class="header">
       <div class="header-logo">
-        <div>
-          <img src="assets/images/Connect-Construction-logo.png" alt="" />
-        </div>
+        <a href="index.html" class="text-decoration-none">
+          <div >
+            <img href="index.html" src="assets/images/Connect-Construction-logo.png" alt="" />
+          </div>
+        </a>
+       
       </div>
 
       <div class="header-bars">
@@ -37,22 +41,30 @@
           class="header-icon-bar d-flex justify-content-between align-items-center"
         >
           <div class="ms-3">
-            <span class="text-white text-medium text-xs">
-              <i class="fa-solid fa-phone text-theme me-2"></i> 604-592-0822
-            </span>
+            <a class="text-decoration-none" href="tel:+604-592-0822" target="_blank">
+              <span class="text-white text-medium text-xs ">
+                <i class="fa-solid fa-phone text-theme me-2"></i> 604-592-0822
+              </span>
+
+            </a>
+            
           </div>
           <div class="d-flex gap-3">
             <div>
+             <a href="https://www.google.com/maps/place/8028+128+St+Unit+120,+Surrey,+BC+V3W+4E9,+Canada/@49.1484471,-122.8697239,17z/data=!3m1!4b1!4m6!3m5!1s0x5485d982b72fffff:0xac0fc18c1815ecd2!8m2!3d49.1484471!4d-122.867149!16s%2Fg%2F11q8srwqhs?entry=ttu&g_ep=EgoyMDI0MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-decoration-none">
               <span class="text-white text-medium text-xs">
                 <i class="fa-solid fa-location-dot text-theme me-2"></i> 8028
                 128 St Unit#120, Surrey, BC, V3W 4E9
               </span>
+             </a>
             </div>
             <div>
+             <a href="mailto:info@connectconstruction.com" class="text-decoration-none">
               <span class="text-white text-medium text-xs">
                 <i class="fa-solid fa-envelope text-theme me-2"></i>
                 Info@connectconstruction.com
               </span>
+             </a>
             </div>
           </div>
         </div>
@@ -62,7 +74,7 @@
         >
           <div>
             <ul
-              class="list-unstyled d-flex justify-content-center align-items-center gap-3 mt-3 ms-3 text-medium text-xs"
+              class="list-unstyled d-flex justify-content-center align-items-center gap-4 mt-3 ms-3 text-medium text-sm"
             >
               <li><a href="index.html">Home</a></li>
               <li><a href="allCategories.html">Category</a></li>
@@ -72,7 +84,7 @@
             </ul>
           </div>
 
-          <div>
+          <div class="d-flex align-items-center gap-3">
             <button id="auth-btn" class="auth-btn text-sm text-regular">
               Login | Register
             </button>
@@ -89,7 +101,7 @@
     <header class="mobile-header">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="logo">
-          <a href="#">
+          <a href="index.html">
             <img src="assets/images/Connect-Construction-logo.png" alt="Logo" />
           </a>
         </div>
@@ -98,13 +110,13 @@
       <nav class="mobile-menu" id="mobileMenu">
         <button class="close-button" id="closeButton">&times;</button>
         <ul
-          class="list-unstyled d-flex flex-column justify-content-center align-items-left gap-3 mt-5 text-medium text-md"
+          class="list-unstyled d-flex flex-column justify-content-center align-items-left gap-3 mt-5 text-medium"
         >
           <li><a href="index.html">Home</a></li>
-          <li><a href="">About Us</a></li>
           <li><a href="allCategories.html">Category</a></li>
-          <li><a href="">Coupons</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li><a href="coupons.html">Coupons</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
           <li><a id="auth-btn" href="">Login | Register</a></li>
           <li><a href="advertise.html">Advertise With us</a></li>
         </ul>
@@ -116,16 +128,19 @@
     <section
       class="hero-section d-flex justify-content-start align-items-center"
     >
-      <div class="container mt-5 ms-lg-5">
+      <div
+        class="container mt-lg-5 ms-lg-5"
+       
+      >
         <div class="row">
           <!-- Main Content Column -->
-          <div class="col-12 col-md-6">
+          <div class="col-12 roll-in ">
             <h1 class="text-center text-lg-start text-theme text-medium mb-4">
               Connect with Contractors
             </h1>
 
             <!-- Search Bar -->
-            <div class="search-container mb-5 text-center text-lg-start">
+            <div class="search-container col-12 col-lg-6  mb-5 text-center text-lg-start">
               <input
                 type="text"
                 class="search-input"
@@ -147,45 +162,52 @@
 
             <!-- Contractor Categories -->
             <div
-              class="d-flex flex-wrap flex-lg-row justify-content-center justify-content-lg-between align-items-center gap-4"
+              class="col-xl-8 col-xxl-6  d-flex flex-wrap flex-lg-row justify-content-center justify-content-lg-between align-items-center gap-4"
+            >
+            <a href="selectedCategory.html" class="text-decoration-none">
+              <div
+              class="d-flex flex-column justify-content-center align-items-center"
             >
               <div
-                class="d-flex flex-column justify-content-center align-items-center"
+                class="icon-box d-flex justify-content-center align-items-center mb-2"
               >
-                <div
-                  class="icon-box d-flex justify-content-center align-items-center mb-2"
-                >
-                  <img
-                    src="assets/icons/Electric.svg"
-                    alt="Electric Contractors"
-                  />
-                </div>
-                <div class="text-center">
-                  <span class="text-white text-xs text-regular"
-                    >Electric Contractors</span
-                  >
-                </div>
+                <img
+                  src="assets/icons/Electric.svg"
+                  alt="Electric Contractors"
+                />
               </div>
+              <div class="text-center">
+                <span class="text-white text-xs text-regular cat-tag"
+                  >Electric <br />
+                  Contractors</span
+                >
+              </div>
+            </div>
+            </a>
 
+             <a href="selectedCategory.html" class="text-decoration-none">
               <div
-                class="d-flex flex-column justify-content-center align-items-center"
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <div
+                class="icon-box d-flex justify-content-center align-items-center mb-2"
               >
-                <div
-                  class="icon-box d-flex justify-content-center align-items-center mb-2"
-                >
-                  <img
-                    src="assets/icons/painting-home.svg"
-                    alt="Painting Contractors"
-                  />
-                </div>
-                <div class="text-center">
-                  <span class="text-white text-xs text-regular"
-                    >Painting Contractors</span
-                  >
-                </div>
+                <img
+                  src="assets/icons/painting-home.svg"
+                  alt="Painting Contractors"
+                />
               </div>
+              <div class="text-center">
+                <span class="text-white text-xs text-regular cat-tag"
+                  >Painting <br />
+                  Contractors</span
+                >
+              </div>
+            </div>
+             </a>
 
-              <div
+              <a href="selectedCategory.html" class="text-decoration-none">
+                <div
                 class="d-flex flex-column justify-content-center align-items-center"
               >
                 <div
@@ -197,29 +219,35 @@
                   />
                 </div>
                 <div class="text-center">
-                  <span class="text-white text-xs text-regular"
-                    >Plumbering Contractors</span
+                  <span class="text-white text-xs text-regular cat-tag"
+                    >Plumbering <br />
+                    Contractors</span
                   >
                 </div>
               </div>
+              </a>
 
-              <div
+              <a href="allCategories.html" class="text-decoration-none">
+                <div
                 class="d-flex flex-column justify-content-center align-items-center"
               >
                 <div
-                  class="icon-box d-flex justify-content-center align-items-center mb-2"
+                  class="icon-box d-flex justify-content-center align-items-center mb-2 bg-yellow"
                 >
                   <img
-                    src="assets/icons/Plumbering.svg"
+                    src="assets/icons/All-cat-icon.svg"
                     alt="View All Categories"
                   />
                 </div>
                 <div class="text-center">
-                  <span class="text-white text-xs text-regular"
-                    >View All Categories</span
+                  <span class="text-white text-xs text-regular cat-tag"
+                    >View <br />
+                    All Categories</span
                   >
                 </div>
               </div>
+              </a>
+             
             </div>
             <!-- End of Contractor Categories -->
           </div>
@@ -229,10 +257,11 @@
     </section>
     <!-- End of Hero-Section -->
 
+
     <!-- Slider Section Start -->
     <div class="mt-5">
       <div class="carousel-heading">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="300">
           <h2
             class="text-medium text-primary text-lg text-center text-lg-start"
           >
@@ -244,6 +273,8 @@
       <div class="carousel-container">
         <!-- Carousel Start -->
         <div
+          data-aos="fade-up"
+          data-aos-delay="600"
           class="carousel-wrapper d-flex justify-content-between align-items-baseline"
         >
           <!-- Navigation Buttons Container -->
@@ -272,7 +303,8 @@
                   </div>
                   <div class="slide-text">
                     <span class="text-sm text-primary text-medium">
-                      An Elegant Touch <br> Home Staging & Design
+                      An Elegant Touch <br />
+                      Home Staging & Design
                     </span>
                   </div>
                 </div>
@@ -287,7 +319,8 @@
                   </div>
                   <div class="slide-text ms-2">
                     <span class="text-sm text-primary text-medium">
-                      An Elegant Touch <br> Home Staging & Design
+                      An Elegant Touch <br />
+                      Home Staging & Design
                     </span>
                   </div>
                 </div>
@@ -302,7 +335,8 @@
                   </div>
                   <div class="slide-text ms-2">
                     <span class="text-sm text-primary text-medium">
-                      An Elegant Touch <br> Home Staging & Design
+                      An Elegant Touch <br />
+                      Home Staging & Design
                     </span>
                   </div>
                 </div>
@@ -317,7 +351,8 @@
                   </div>
                   <div class="slide-text ms-2">
                     <span class="text-sm text-primary text-medium">
-                      An Elegant Touch <br> Home Staging & Design
+                      An Elegant Touch <br />
+                      Home Staging & Design
                     </span>
                   </div>
                 </div>
@@ -332,7 +367,8 @@
                   </div>
                   <div class="slide-text ms-2">
                     <span class="text-sm text-primary text-medium">
-                      An Elegant Touch <br> Home Staging & Design
+                      An Elegant Touch <br />
+                      Home Staging & Design
                     </span>
                   </div>
                 </div>
@@ -351,112 +387,142 @@
     >
       <div class="diagonal-border"></div>
       <div>
-        <div class="text-center mt-5">
+        <div class="text-center mt-5" data-aos="fade-up">
           <span class="text-md text-medium">News</span>
           <h2 class="text-lg text-medium">Articles & Blog Posts</h2>
         </div>
         <!-- Blog Carousel Starts  -->
-        <div class="owl-carousel owl-theme container" id="blog-carousel">
-          <div class="blog-card item">
-            <div>
-              <img src="assets/images/blog-image.png" alt="" />
-            </div>
-            <div class="blog-card-date">
-              <span class="text-xs text-medium text-primary">January 10, 2024</span>
-            </div>
-
-            <div class="blog-card-text">
+        <div data-aos="fade-up" data-aos-delay="300">
+          <div class="owl-carousel owl-theme container" id="blog-carousel">
+            <div class="blog-card item">
               <div>
-                <h2 class="mt-3 text-medium text-md">
-                  Complete Bill And Adele Jonas Center
-                </h2>
+                <img src="assets/images/blog-image.png" alt="" />
+              </div>
+              <div class="blog-card-date">
+                <span class="text-xs text-medium text-primary"
+                  >January 10, 2024</span
+                >
+              </div>
+
+              <div class="blog-card-text">
+                <div>
+                  <h2 class="mt-3 text-medium text-md">
+                    Complete Bill And Adele Jonas Center
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="blog-card item">
-            <div>
-              <img src="assets/images/blog-image.png" alt="" />
-            </div>
-            <div class="blog-card-date">
-              <span class="text-xs text-medium text-primary">January 10, 2024</span>
-            </div>
-
-            <div class="blog-card-text">
+           <a href="singleBlog.html" class="text-decoration-none text-primary">
+            <div class="blog-card item">
               <div>
-                <h2 class="mt-3 text-medium text-md">
-                  Complete Bill And Adele Jonas Center
-                </h2>
+                <img src="assets/images/blog-image.png" alt="" />
+              </div>
+              <div class="blog-card-date">
+                <span class="text-xs text-medium text-primary"
+                  >January 10, 2024</span
+                >
+              </div>
+
+              <div class="blog-card-text">
+                <div>
+                  <h2 class="mt-3 text-medium text-md">
+                    Complete Bill And Adele Jonas Center
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="blog-card item">
-            <div>
-              <img src="assets/images/blog-image.png" alt="" />
-            </div>
-            <div class="blog-card-date">
-              <span class="text-xs text-medium text-primary">January 10, 2024</span>
-            </div>
+           </a>
 
-            <div class="blog-card-text">
+           
+           <a href="singleBlog.html" class="text-decoration-none text-primary">
+            <div class="blog-card item">
               <div>
-                <h2 class="mt-3 text-medium text-md">
-                  Complete Bill And Adele Jonas Center
-                </h2>
+                <img src="assets/images/blog-image.png" alt="" />
+              </div>
+              <div class="blog-card-date">
+                <span class="text-xs text-medium text-primary"
+                  >January 10, 2024</span
+                >
+              </div>
+
+              <div class="blog-card-text">
+                <div>
+                  <h2 class="mt-3 text-medium text-md">
+                    Complete Bill And Adele Jonas Center
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="blog-card item">
-            <div>
-              <img src="assets/images/blog-image.png" alt="" />
-            </div>
-            <div class="blog-card-date">
-              <span class="text-xs text-medium text-primary">January 10, 2024</span>
-            </div>
+           </a>
 
-            <div class="blog-card-text">
+           <a href="singleBlog.html" class="text-decoration-none text-primary">
+            <div class="blog-card item">
               <div>
-                <h2 class="mt-3 text-medium text-md">
-                  Complete Bill And Adele Jonas Center
-                </h2>
+                <img src="assets/images/blog-image.png" alt="" />
+              </div>
+              <div class="blog-card-date">
+                <span class="text-xs text-medium text-primary"
+                  >January 10, 2024</span
+                >
+              </div>
+
+              <div class="blog-card-text">
+                <div>
+                  <h2 class="mt-3 text-medium text-md">
+                    Complete Bill And Adele Jonas Center
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="blog-card item">
-            <div>
-              <img src="assets/images/blog-image.png" alt="" />
-            </div>
-            <div class="blog-card-date">
-              <span class="text-xs text-medium text-primary">January 10, 2024</span>
-            </div>
+           </a>
 
-            <div class="blog-card-text">
+           <a href="singleBlog.html" class="text-decoration-none text-primary">
+            <div class="blog-card item">
               <div>
-                <h2 class="mt-3 text-medium text-md">
-                  Complete Bill And Adele Jonas Center
-                </h2>
+                <img src="assets/images/blog-image.png" alt="" />
+              </div>
+              <div class="blog-card-date">
+                <span class="text-xs text-medium text-primary"
+                  >January 10, 2024</span
+                >
+              </div>
+
+              <div class="blog-card-text">
+                <div>
+                  <h2 class="mt-3 text-medium text-md">
+                    Complete Bill And Adele Jonas Center
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="blog-card item">
-            <div>
-              <img src="assets/images/blog-image.png" alt="" />
-            </div>
-            <div class="blog-card-date">
-              <span class="text-xs text-medium text-primary">January 10, 2024</span>
-            </div>
+           </a>
 
-            <div class="blog-card-text">
+           <a href="singleBlog.html" class="text-decoration-none text-primary">
+            <div class="blog-card item">
               <div>
-                <h2 class="mt-3 text-medium text-md">
-                  Complete Bill And Adele Jonas Center
-                </h2>
+                <img src="assets/images/blog-image.png" alt="" />
+              </div>
+              <div class="blog-card-date">
+                <span class="text-xs text-medium text-primary"
+                  >January 10, 2024</span
+                >
+              </div>
+
+              <div class="blog-card-text">
+                <div>
+                  <h2 class="mt-3 text-medium text-md">
+                    Complete Bill And Adele Jonas Center
+                  </h2>
+                </div>
               </div>
             </div>
+
+           </a>
           </div>
         </div>
         <!-- Blog Carousel Ends  -->
@@ -466,13 +532,13 @@
 
     <!-- Download-section -->
     <section
-      class="download-section d-flex justify-content-center align-items-center"
+      class="download-section d-flex justify-content-center align-items-center p-5 p-lg-0"
     >
       <div class="row g-5 justify-content-center align-items-center">
         <!-- Mobile Image Section -->
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="300">
           <div class="mobile-image">
-            <img
+            <img class="bounce2"
               src="assets/images/Vector_Smart_Object-removebg-preview.png"
               alt="Mobile App Image"
             />
@@ -480,26 +546,36 @@
         </div>
 
         <!-- Download Text and Buttons -->
-        <div class="col-12 col-lg-6 p-5">
+        <div
+          class="col-12 col-lg-6 p-5"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           <div>
-            <h2 class="download-text mb-2 text-medium text-md lh-1">
+            <h2
+              class="download-text mb-2 text-medium text-md lh-1 text-center text-lg-start"
+            >
               Download Our New Mobile App
             </h2>
 
-            <div class="d-flex justify-content-start gap-4">
+            <div
+              class="d-flex justify-content-center justify-content-lg-start gap-4 "
+            >
               <!-- App Store Buttons -->
               <div class="d-flex flex-column gap-5 mb-4">
+              <a href="https://play.google.com/store" class="text-decoration-none" target="_blank">
                 <div
-                  class="app-btn d-flex justify-content-start align-items-center gap-2"
-                >
-                  <img src="assets/icons/google.svg" alt="Google Play Icon" />
-                  <div class="d-flex flex-column">
-                    <span class="text-light text-xs">Download on the</span>
-                    <span class="text-medium text-sm text-lg-md lh-1"
-                      >Google Play</span
-                    >
-                  </div>
+                class="app-btn d-flex justify-content-start align-items-center gap-2"
+              >
+                <img src="assets/icons/google.svg" alt="Google Play Icon" />
+                <div class="d-flex flex-column">
+                  <span class="text-light text-xs">Download on the</span>
+                  <span class="text-medium text-sm text-lg-md lh-1"
+                    >Google Play</span
+                  >
                 </div>
+              </div>
+              </a>
 
                 <div class="qr-code-container-inner">
                   <img
@@ -513,20 +589,22 @@
 
               <!-- QR Code Container -->
               <div class="qr-code-container d-flex flex-column gap-5">
+               <a href="https://www.apple.com/app-store/" class="text-decoration-none" target="_blank">
                 <div
-                  class="app-btn d-flex justify-content-start align-items-center gap-2"
-                >
-                  <img
-                    src="assets/icons/apple-logo-svgrepo-com.svg"
-                    alt="Apple Store Icon"
-                  />
-                  <div class="d-flex flex-column">
-                    <span class="text-light text-xs">Download on the</span>
-                    <span class="text-medium text-sm text-lg-md lh-1"
-                      >Apple Play</span
-                    >
-                  </div>
+                class="app-btn d-flex justify-content-start align-items-center gap-2"
+              >
+                <img
+                  src="assets/icons/apple-logo-svgrepo-com.svg"
+                  alt="Apple Store Icon"
+                />
+                <div class="d-flex flex-column">
+                  <span class="text-light text-xs">Download on the</span>
+                  <span class="text-medium text-sm text-lg-md lh-1"
+                    >Apple Play</span
+                  >
                 </div>
+              </div>
+               </a>
                 <div>
                   <img
                     src="assets/images/Qr-code.png"
@@ -544,7 +622,7 @@
     <!-- End Download-section -->
 
     <!-- Footer -->
-    <footer>
+    <footer data-aos="fade-up" data-aos-duration="3000">
       <div class="container">
         <div class="row">
           <!-- About Section -->
@@ -557,17 +635,20 @@
 
             <div class="d-flex justify-content-start align-items-center gap-3">
               <div
-                class="social-icon d-flex justify-content-center align-items-center px-3 py-3"
+                class="social-icon d-flex justify-content-center align-items-center"
+                style="padding: 10px 12px"
               >
                 <i class="fa-brands fa-facebook-f text-gray"></i>
               </div>
               <div
-                class="social-icon d-flex justify-content-center align-items-center px-3 py-3"
+                class="social-icon d-flex justify-content-center align-items-center"
+                style="padding: 10px 9px"
               >
                 <i class="fa-brands fa-google-plus-g text-gray"></i>
               </div>
               <div
-                class="social-icon d-flex justify-content-center align-items-center px-3 py-3"
+                class="social-icon d-flex justify-content-center align-items-center"
+                style="padding: 10px 10px"
               >
                 <i class="fa-brands fa-twitter text-gray"></i>
               </div>
@@ -575,7 +656,7 @@
           </div>
 
           <!-- Contact Info Section -->
-          <div class="col-12 col-lg-3">
+          <div class="col-12 col-lg-3 mt-4 mt-lg-0">
             <h2 class="text-md text-semi-bold text-white">Contact Info</h2>
             <ul class="mt-5 address-list">
               <li class="mb-2 d-flex">
@@ -610,12 +691,23 @@
           <div class="col-12 col-lg-3">
             <h2 class="text-md text-semi-bold text-white">Quick Links</h2>
             <ul class="mt-5 list-unstyled">
-              <li class="mb-2 text-regular text-xs text-purple">Home</li>
-              <li class="mb-2 text-regular text-xs text-purple">About us</li>
-              <li class="mb-2 text-regular text-xs text-purple">Services</li>
-              <li class="mb-2 text-regular text-xs text-purple">Timing</li>
-              <li class="mb-2 text-regular text-xs text-purple">Blog</li>
-              <li class="mb-2 text-regular text-xs text-purple">Contact us</li>
+              <a href="index.html" class="text-decoration-none">
+                <li class="mb-2 text-regular text-xs text-purple">Home</li>
+              </a>
+              <a href="allCategories.html" class="text-decoration-none">
+                <li class="mb-2 text-regular text-xs text-purple">Category</li>
+              </a>
+              <a href="coupons.html" class="text-decoration-none">
+                <li class="mb-2 text-regular text-xs text-purple">Coupons</li>
+              </a>
+              <a href="blog.html" class="text-decoration-none">
+                <li class="mb-2 text-regular text-xs text-purple">Blog</li>
+              </a>
+              <a href="contactUs.html" class="text-decoration-none">
+                <li class="mb-2 text-regular text-xs text-purple">
+                  Contact Us
+                </li>
+              </a>
             </ul>
           </div>
 
@@ -646,16 +738,18 @@
           <div
             class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 gap-lg-0"
           >
-            <div class="d-flex justify-content-center gap-5">
+            <div
+              class="d-flex flex-row flex-lg-row justify-content-center align-items-center gap-3 gap-lg-5"
+            >
               <span
                 class="d-flex justify-content-center align-items-center text-purple text-xs text-regular"
                 >Privacy Policy
-                <div class="divider ms-5"></div>
+                <div class="divider ms-2 ms-lg-5"></div>
               </span>
               <span
                 class="d-flex justify-content-center align-items-center text-purple text-xs text-regular"
                 >Cookies Acceptance/Policy
-                <div class="divider ms-5"></div>
+                <div class="divider ms-2 ms-lg-5"></div>
               </span>
               <span
                 class="d-flex justify-content-center align-items-center text-purple text-xs text-regular"
@@ -678,16 +772,15 @@
     <span id="back-top" class="text-center md-round fa fa-caret-up"></span>
     <!-- back top of the page -->
 
-
     <!-- loader of the page -->
     <div id="loader" class="loader-holder">
       <div class="block">
         <img src="assets/icons/hearts.svg" width="100" alt="loader" />
       </div>
     </div>
-     <!-- loader of the page -->
+    <!-- loader of the page -->
 
-     <!-- Popup Form -->
+    <!-- Popup Form -->
     <div class="popup-holder">
       <div id="popup" class="signup-form">
         <!-- Close button -->
@@ -721,7 +814,10 @@
                 placeholder="Passowrd"
               />
             </div>
-            <button type="submit" class="common-btn text-xs text-regular text-white">
+            <button
+              type="submit"
+              class="common-btn text-xs text-regular text-white"
+            >
               SIGN IN
             </button>
             <a href="#" id="switch-to-signup">Sign up</a>
@@ -730,8 +826,18 @@
         </form>
       </div>
     </div>
-     <!-- Popup Form -->
-\
+    <!-- Popup Form -->
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
