@@ -148,8 +148,6 @@ $(document).ready(function() {
       `);
   }
 });
-
-
 $(window).on('load', function() {
   $("#blog-carousel").owlCarousel({
     loop: true,
@@ -199,6 +197,34 @@ $(document).ready(function() {
 });
 
 
+ 
+$(document).ready(function() {
+  $('.item').on('click', function() {
+      // Clear the carousel inner before adding new slides
+      $('.carousel-inner').empty();
+      
+      // Get all image sources from the items
+      var images = [
+          "assets/images/dreamstime.png",
+          "assets/images/dreamstime.png",
+          "assets/images/dreamstime.png",
+          "assets/images/dreamstime.png"
+      ];
+
+      // Populate the carousel with images
+      images.forEach(function(src, index) {
+          var activeClass = index === 0 ? 'active' : '';
+          $('.carousel-inner').append(
+              `<div class="carousel-item ${activeClass}">
+                  <img src="${src}" class="d-block w-100" alt="Image ${index + 1}">
+              </div>`
+          );
+      });
+
+      // Show the modal
+      $('#galleryModal').modal('show');
+  });
+});
 
 $(document).ready(function () {
   let items = [
