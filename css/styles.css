@@ -346,6 +346,13 @@
 }
 
 
+.company-logo{
+  border-bottom-left-radius: 15px; 
+  border-bottom-right-radius: 15px; 
+  position: absolute;
+  top: 0;
+}
+
 
 
 
@@ -376,18 +383,39 @@
   cursor: pointer;
   outline: none;
 }
-
 .mobile-menu {
-  background-color: var(--theme-color);
+  background-image: url('../assets/images/electric-construction.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   position: fixed;
   right: -100%;
   top: 0;
   width: 100%;
   height: 100%;
-  transition: right 0.3s ease-in-out;
+  transition: right 0.5s ease-in-out;
   z-index: 9;
   padding: 20px;
+  overflow: hidden; /* Ensures the pseudo-element is contained within the .mobile-menu */
 }
+
+.mobile-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--theme-color); /* Adjust the color and opacity as needed */
+  opacity: 0.9;
+  z-index: 1; /* Ensure the overlay is above the background image but below the content */
+}
+
+.mobile-menu > * {
+  position: relative;
+  z-index: 2; /* Ensure that the content is above the overlay */
+}
+
 
 .mobile-menu.active {
   right: 0;
@@ -612,6 +640,11 @@
   z-index: 10;
 }
 
+
+.featured-slider-image{
+  max-width: 380px;
+}
+
 /* Slider Section  */
 
 /* Download-Section  */
@@ -692,6 +725,7 @@
 
 .blog-card img {
   width: 100%;
+  max-width: 480px;
   position: relative;
   top: 40px;
   z-index: 10;
@@ -940,39 +974,22 @@ footer {
 }
 
 .modal-content{
-  background-color: var(--gray2);
+  background-color: #ffffff00 !important;
+  border: none !important;
 }
 
+.modal-header{
+  border-bottom: none;
+}
+.modal-footer{
+   border-top: none;
+}
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust background color if needed */
-  border-radius: 50%; /* Make the icon circular */
+  background-color:black !important; 
+  border-radius: 50%;
+  padding: 10px !important;
 }
 
-.carousel-control-prev-icon {
-  /* Remove the old background image */
-  background: none;
-}
-
-.carousel-control-prev-icon::before {
-  content: "\f104"; /* FontAwesome icon code for "chevron-left" */
-  font-family: 'Font Awesome 5 Free'; /* Use FontAwesome 5 Free */
-  font-weight: 900; /* FontAwesome 5 Free uses bold weight for solid icons */
-  color: var(--gray2); /* Color of the icon */
-  font-size: 1.5rem; /* Adjust the size of the icon */
-}
-
-.carousel-control-next-icon {
-  /* Remove the old background image */
-  background: none;
-}
-
-.carousel-control-next-icon::before {
-  content: "\f105"; /* FontAwesome icon code for "chevron-right" */
-  font-family: 'Font Awesome 5 Free'; /* Use FontAwesome 5 Free */
-  font-weight: 900; /* FontAwesome 5 Free uses bold weight for solid icons */
-  color: var(--gray2); /* Color of the icon */
-  font-size: 1.5rem; /* Adjust the size of the icon */
-}
 
 
 .signup-form {
@@ -1416,6 +1433,9 @@ top: -20px;
 
 @media(max-width:576px){
 
+ 
+    
+    
     
   .icon-box {
       background-color: white;
@@ -1452,11 +1472,23 @@ top: -20px;
   
 
   
-
+@media (max-width:430px) {
+  .company-logo{
+    left: 15% !important;
+    }
+ .elegent-text{
+  font-size: 24px;
+ }
+}
 
 @media (max-width: 768px) {
 
   
+.company-logo{
+left: 30%;
+}
+
+
 
 
 
